@@ -73,7 +73,11 @@ public class Goalie : MonoBehaviour {
         Vector3 moveVector = transform.position;
         moveVector.x = newGoalieX;
         moveVector.z = newGoalieZ;
-        if (Math.Abs(moveVector.x - leftPost.position.x) > Math.Abs(goalMax.position.x - leftPost.position.x))
+        if (moveVector.x >= leftPost.position.x)
+        {
+            moveVector.x = leftPost.position.x;
+        }
+        else if (Math.Abs(moveVector.x - leftPost.position.x) > Math.Abs(goalMax.position.x - leftPost.position.x))
         {
             moveVector.x = goalMax.position.x;
         }

@@ -32,6 +32,20 @@ public class SoccerBall : MonoBehaviour {
         xy.Raycast(ray, out point);
         m_targetPosition = ray.GetPoint(point);
         m_targetPosition.y = transform.position.y;
+
+        if (m_targetPosition.z < -10.07f)
+        {
+            m_targetPosition.z = -10.07f;
+        }
+        else if (m_targetPosition.z > 10.07f)
+        {
+            m_targetPosition.z = 10.07f;
+        }
+
+        if (m_targetPosition.x > 4.57f)
+        {
+            m_targetPosition.x = 4.57f;
+        }
         m_soccerBallRig.AI.WorkingMemory.SetItem<Vector3>("MovePos", m_targetPosition);
     }
 }
