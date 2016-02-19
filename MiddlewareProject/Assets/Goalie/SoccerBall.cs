@@ -9,6 +9,9 @@ public class SoccerBall : MonoBehaviour {
 
     private Vector3 m_targetPosition;
 
+    [SerializeField]
+    private Transform m_ballStart;
+
     void Start()
     {
         m_soccerBallRig = GetComponent<AIRig>();
@@ -47,5 +50,10 @@ public class SoccerBall : MonoBehaviour {
             m_targetPosition.x = 4.57f;
         }
         m_soccerBallRig.AI.WorkingMemory.SetItem<Vector3>("MovePos", m_targetPosition);
+    }
+
+    public void _ReturnToStart()
+    {
+        m_soccerBallRig.AI.WorkingMemory.SetItem<Vector3>("MovePos", m_ballStart.transform.position);
     }
 }
