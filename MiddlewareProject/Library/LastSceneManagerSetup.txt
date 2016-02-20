@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Miner/MinerScene.unity
-  isLoaded: 1
-  isActive: 1
