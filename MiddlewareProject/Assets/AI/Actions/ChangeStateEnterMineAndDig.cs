@@ -17,6 +17,9 @@ public class ChangeStateEnterMineAndDig : RAINAction
         Miner theMiner = ai.Body.GetComponent<Miner>();
         theMiner.MinerLocation = Miner.Location.Mine;
         theMiner.MinerState = Miner.State.EnterMineAndDig;
+        AIRig minerRig = theMiner.GetComponentInChildren<AIRig>();
+        minerRig.AI.WorkingMemory.SetItem<int>("MinerState", 0);
+        //minerRig.AI.WorkingMemory.SetItem<Miner.Location>("MinerLocation", Miner.Location.Mine);
         return ActionResult.SUCCESS;
     }
 

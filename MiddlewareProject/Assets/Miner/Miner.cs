@@ -10,12 +10,9 @@ public class Miner : MonoBehaviour {
     private int fatigue = 0;
     private int gold = 0;
     private int wealth = 0;
-    [SerializeField]
-    private int comfortLevel; // The Miner's comfort level. When his wealth surpasses this, he can go home.
-    [SerializeField]
-    private int thirstThreshold; // The Miner's thirst threshold, when it exceeds this he will go to the saloon.
-    [SerializeField]
-    private int goldThreshold; // The Miner's gold threshold, when the amount of gold in his pockets exceeds this he will go to the bank.
+    private int comfortLevel = 6; // The Miner's comfort level. When his wealth surpasses this, he can go home.
+    private int thirstThreshold = 6; // The Miner's thirst threshold, when it exceeds this he will go to the saloon.
+    private int goldThreshold = 5; // The Miner's gold threshold, when the amount of gold in his pockets exceeds this he will go to the bank.
 
     private AIRig minerRig;
 
@@ -25,41 +22,70 @@ public class Miner : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
         minerRig = GetComponentInChildren<AIRig>();
-	}
+        // Set the miner's state and behavior to be accessible in the behavior tree
+        minerRig.AI.WorkingMemory.SetItem<int>("MinerState", 0);
+        //minerRig.AI.WorkingMemory.SetItem<Miner.Location>("MinerLocation", Location.Mine);
+        // Set the miner's thresholds to be visible in the behavior tree
+        minerRig.AI.WorkingMemory.SetItem<int>("ComfortLevel", comfortLevel);
+        minerRig.AI.WorkingMemory.SetItem<int>("ThirstThreshold", thirstThreshold);
+        minerRig.AI.WorkingMemory.SetItem<int>("GoldThreshold", goldThreshold);
+        // Set the initial values of the miner's variables to be seen in the behavior tree
+        minerRig.AI.WorkingMemory.SetItem<int>("Fatigue", fatigue);
+        minerRig.AI.WorkingMemory.SetItem<int>("Gold", gold);
+        minerRig.AI.WorkingMemory.SetItem<int>("Thirst", thirst);
+        minerRig.AI.WorkingMemory.SetItem<int>("Wealth", wealth);
+
+
+        Debug.Log(
+          ", GoldMAX " + minerRig.AI.WorkingMemory.GetItem<int>("GoldThreshold") +
+          ", ThirstMAX " + minerRig.AI.WorkingMemory.GetItem<int>("ThirstThreshold") +
+          ", WealthMAX " + minerRig.AI.WorkingMemory.GetItem<int>("ComfortLevel"));
+
+    }
 
 	// Update is called once per frame
 	void Update () {
 	    // Depending on the state, process it.
-        switch(miner_State)
+        //switch(miner_State)
+        switch(minerRig.AI.WorkingMemory.GetItem<int>("MinerState"))
         {
-            case State.EnterMineAndDig:
+            case 0:
                 {
                     Fatigue += 1;
                     Thirst += 1;
                     Gold += 1;
+                    minerRig.AI.WorkingMemory.SetItem<int>("Fatigue", Fatigue);
+                    minerRig.AI.WorkingMemory.SetItem<int>("Gold", Gold);
+                    minerRig.AI.WorkingMemory.SetItem<int>("Thirst", Thirst);
                     break;
                 }
-            case State.VisitBank:
+            case 1:
                 {
-                    Wealth += Gold;
-                    Gold = 0;
+                    // Bank logic moved to ChangeStateVisitBank, as its one-shot execution works better there.
                     break;
                 }
-            case State.QuenchThirst:
+            case 3:
                 {
                     Thirst -= 1;
+                    minerRig.AI.WorkingMemory.SetItem<int>("Thirst", Thirst);
                     break;
                 }
-            case State.GoHomeAndSleep:
+            case 2:
                 {
                     Fatigue -= 1;
+                    minerRig.AI.WorkingMemory.SetItem<int>("Fatigue", Fatigue);
                     break;
                 }
             default:
                 break;
         }
-        Debug.Log("Miner State: " + MinerState + ", Fatigue " + Fatigue + ", Gold " + Gold + ", Thirst " + Thirst + ", Wealth " + Wealth);
-	}
+        //Debug.Log("Miner State: " + MinerState + ", Fatigue " + Fatigue + ", Gold " + Gold + ", Thirst " + Thirst + ", Wealth " + Wealth);
+        Debug.Log("Miner State: " + minerRig.AI.WorkingMemory.GetItem<int>("MinerState") + 
+                  ", Fatigue " + minerRig.AI.WorkingMemory.GetItem<int>("Fatigue") + 
+                  ", Gold " + minerRig.AI.WorkingMemory.GetItem<int>("Gold") + 
+                  ", Thirst " + minerRig.AI.WorkingMemory.GetItem<int>("Thirst") + 
+                  ", Wealth " + minerRig.AI.WorkingMemory.GetItem<int>("Wealth"));
+    }
 
     // PROPERTIES
     public State MinerState

@@ -17,6 +17,9 @@ public class ChangeStateQuenchThirst : RAINAction
         Miner theMiner = ai.Body.GetComponent<Miner>();
         theMiner.MinerLocation = Miner.Location.Saloon;
         theMiner.MinerState = Miner.State.QuenchThirst;
+        AIRig minerRig = theMiner.GetComponentInChildren<AIRig>();
+        minerRig.AI.WorkingMemory.SetItem<int>("MinerState", 3);
+        //minerRig.AI.WorkingMemory.SetItem<Miner.Location>("MinerLocation", Miner.Location.Saloon);
         return ActionResult.SUCCESS;
     }
 
