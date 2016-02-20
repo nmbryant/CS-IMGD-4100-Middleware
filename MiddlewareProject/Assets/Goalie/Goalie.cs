@@ -40,6 +40,7 @@ public class Goalie : MonoBehaviour {
 
     SoccerBall soccerBall;
     Vector3 goalCenter;
+    bool isTouchingBall;
 
     void Start()
     {
@@ -56,7 +57,13 @@ public class Goalie : MonoBehaviour {
 	void Update () {
         goalieRig.AI.WorkingMemory.SetItem<Vector3>("SoccerBallPos", soccerBall.transform.position);
         bool isBlockingCenter = goalieRig.AI.WorkingMemory.GetItem<bool>("IsBlockingCenter");
+        _CheckIfTouchingBall();
+        _UpdateDistanceToBall();
         _FindInterceptPoint();
+        if (isTouchingBall)
+        {
+            _CheckIfAtHome();
+        }
     }
 
     private void _FindInterceptPoint()
@@ -82,5 +89,40 @@ public class Goalie : MonoBehaviour {
             moveVector.x = goalMax.position.x;
         }
         goalieRig.AI.WorkingMemory.SetItem<Vector3>("MovePos", moveVector);
+    }
+
+    private void _UpdateDistanceToBall()
+    {
+        float distance = Vector3.Distance(transform.position, soccerBall.transform.position);
+        if (distance < 3)
+        {
+            goalieRig.AI.WorkingMemory.SetItem<bool>("IsBlockingCenter", true);
+        }
+        else
+        {
+            goalieRig.AI.WorkingMemory.SetItem<bool>("IsBlockingCenter", false);
+        }
+        goalieRig.AI.WorkingMemory.SetItem<float>("DistanceToBall", distance);
+    }
+
+    
+    void _CheckIfTouchingBall()
+    {
+        if (Vector3.Distance(transform.position, soccerBall.transform.position) < 1)
+        {
+            goalieRig.AI.WorkingMemory.SetItem<bool>("IsTouchingBall", true);
+            isTouchingBall = true;
+            soccerBall._ReturnToStart();
+            goalieRig.AI.WorkingMemory.SetItem<Vector3>("GoalieHome", goalMax.transform.position);
+        }
+    }
+
+    void _CheckIfAtHome()
+    {
+        if (Vector3.Distance(transform.position, goalMax.transform.position) <= 2.5)
+        {
+            isTouchingBall = false;
+            goalieRig.AI.WorkingMemory.SetItem<bool>("IsTouchingBall", false);
+        }
     }
 }
