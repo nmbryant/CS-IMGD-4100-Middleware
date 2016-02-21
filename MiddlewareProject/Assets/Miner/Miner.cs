@@ -41,10 +41,20 @@ public class Miner : MonoBehaviour {
           ", ThirstMAX " + minerRig.AI.WorkingMemory.GetItem<int>("ThirstThreshold") +
           ", WealthMAX " + minerRig.AI.WorkingMemory.GetItem<int>("ComfortLevel"));
 
+	    StartCoroutine(Thinker());
+	}
+
+    IEnumerator Thinker()
+    {
+        while (true)
+        {
+            Think();
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 
 	// Update is called once per frame
-	void Update () {
+	void Think () {
 	    // Depending on the state, process it.
         //switch(miner_State)
         switch(minerRig.AI.WorkingMemory.GetItem<int>("MinerState"))
