@@ -855,12 +855,12 @@ MonoBehaviour:
       /></reference><reference type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field
       type="System.Collections.Generic.List" id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem"><field
       type="RAIN.Memory.BasicMemory+MemoryItem" reference="7" id="element0" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="8" id="element1" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="9" id="element2" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="10" id="element3" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="11" id="element4" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="11" id="element1" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="8" id="element2" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="13" id="element3" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="10" id="element4" /><field
       type="RAIN.Memory.BasicMemory+MemoryItem" reference="12" id="element5" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="13" id="element6" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="9" id="element6" /><field
       type="RAIN.Memory.BasicMemory+MemoryItem" reference="14" id="element7" /></field></reference><reference
       type="RAIN.Minds.BasicMind" refcount="1" id="2"><field type="RAIN.BehaviorTrees.BTAsset"
       id="_behaviorTreeAsset" gameobject="1" /><field type="System.Collections.Generic.List"

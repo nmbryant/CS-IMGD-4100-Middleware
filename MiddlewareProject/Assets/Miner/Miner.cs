@@ -71,7 +71,11 @@ public class Miner : MonoBehaviour {
                 }
             case 1:
                 {
-                    // Bank logic moved to ChangeStateVisitBank, as its one-shot execution works better there.
+                    // Instead of depositing all gold at once, deposit one G per cycle.
+                    Gold -= 1;
+                    Wealth += 1;
+                    minerRig.AI.WorkingMemory.SetItem<int>("Gold", Gold);
+                    minerRig.AI.WorkingMemory.SetItem<int>("Wealth", Wealth);
                     break;
                 }
             case 3:

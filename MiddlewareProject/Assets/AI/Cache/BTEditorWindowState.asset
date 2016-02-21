@@ -15,10 +15,10 @@ MonoBehaviour:
   HolderNodes:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
-    BehaviorTreeID: 0
+    BehaviorTreeID: 20
     BehaviorTreeBindings: []
-    LastUpdate: 0
-    LastModified: 0
+    LastUpdate: 635916562819911538
+    LastModified: 635915917771447766
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -29,21 +29,21 @@ MonoBehaviour:
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/Goalie.asset
     BehaviorTreeName: Goalie
-    BehaviorTreeID: 2
+    BehaviorTreeID: 0
     BehaviorTreeBindings: []
     LastUpdate: 635914936715324619
     LastModified: 635914112965562660
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/Miner.asset
     BehaviorTreeName: Miner
-    BehaviorTreeID: 9
+    BehaviorTreeID: 20
     BehaviorTreeBindings: []
-    LastUpdate: 635915165734974995
-    LastModified: 635915095205800957
+    LastUpdate: 635916562819911538
+    LastModified: 635915917771447766
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/SoccerBall.asset
     BehaviorTreeName: SoccerBall
-    BehaviorTreeID: 6
+    BehaviorTreeID: 0
     BehaviorTreeBindings: []
     LastUpdate: 635914936833261365
     LastModified: 635914112965972683
@@ -58,9 +58,25 @@ MonoBehaviour:
       _children: 
       _variables: 
       _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
     - _fields:
       - _field: name
-        _currentValue: ShouldMove
+        _currentValue: Not Wealthy
         _recordChange: 1
         _changed: 0
       - _field: open
@@ -92,830 +108,14 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: constraint
-        _currentValue: '!IsBlockingCenter'
+        _currentValue: Wealth < ComfortLevel
         _recordChange: 1
         _changed: 0
       _type: 5
-      _stateIndex: 1
-      _parent: 2
-      _lastUpdate: 635914936715314619
-      _children: 05000000
-      _variables: 
-      _focused: 1
-    - _fields:
-      - _field: name
-        _currentValue: Goalie
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 4
-      _stateIndex: 2
-      _parent: 0
-      _lastUpdate: 635914936715314619
-      _children: 01000000
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: move
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: movetarget
-        _currentValue: MovePos
-        _recordChange: 1
-        _changed: 0
-      - _field: movespeed
-        _currentValue: 20
-        _recordChange: 1
-        _changed: 0
-      - _field: facetarget
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: turnspeed
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: closeenoughdistance
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: closeenoughangle
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 14
-      _stateIndex: 5
-      _parent: 1
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: SoccerBall
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 4
-      _stateIndex: 6
-      _parent: 0
-      _lastUpdate: 635914936833261365
-      _children: 07000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: ShouldMove
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: '!IsAtPosition'
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 7
-      _parent: 6
-      _lastUpdate: 635914936833261365
-      _children: 08000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: move
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: movetarget
-        _currentValue: MovePos
-        _recordChange: 1
-        _changed: 0
-      - _field: movespeed
-        _currentValue: 5
-        _recordChange: 1
-        _changed: 0
-      - _field: facetarget
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: turnspeed
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: closeenoughdistance
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: closeenoughangle
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 14
-      _stateIndex: 8
-      _parent: 7
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Miner
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 4
-      _stateIndex: 9
-      _parent: 0
-      _lastUpdate: 635915165724964422
-      _children: 170000001c0000002100000023000000
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields: []
-      _type: 0
-      _stateIndex: 0
-      _parent: 0
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: ChangeState - EnterMineAndDig
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: namespace
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: classname
-        _currentValue: ChangeStateEnterMineAndDig
-        _recordChange: 1
-        _changed: 0
-      - _field: parameters
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: parametervalues
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 1
-      _stateIndex: 21
-      _parent: 36
-      _lastUpdate: 635915165724964422
-      _children: 
-      _variables: 
-      _focused: 1
-    - _fields:
-      - _field: name
-        _currentValue: ChangeState - EnterMineAndDig
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: namespace
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: classname
-        _currentValue: ChangeStateEnterMineAndDig
-        _recordChange: 1
-        _changed: 0
-      - _field: parameters
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: parametervalues
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 1
-      _stateIndex: 22
-      _parent: 34
-      _lastUpdate: 635915165185333557
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Check State - EnterMineAndDig
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: MinerState == State.EnterMineAndDig
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 23
-      _parent: 9
-      _lastUpdate: 635915163086583515
-      _children: 180000001a000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Holding Enough Gold?
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: Gold >= goldThreshold
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 24
-      _parent: 23
-      _lastUpdate: 635915163086583515
-      _children: 19000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: ChangeState - VisitBank
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: namespace
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: classname
-        _currentValue: ChangeStateVisitBank
-        _recordChange: 1
-        _changed: 0
-      - _field: parameters
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: parametervalues
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 1
-      _stateIndex: 25
-      _parent: 24
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Thirsty?
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: Thirst >= thirstThreshold
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 26
-      _parent: 23
-      _lastUpdate: 635915163086583515
-      _children: 1b000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: ChangeState - QuenchThirst
-        _recordChange: 1
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: namespace
-        _currentValue: (global)
-        _recordChange: 1
-        _changed: 0
-      - _field: classname
-        _currentValue: ChangeStateQuenchThirst
-        _recordChange: 1
-        _changed: 0
-      - _field: parameters
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: parametervalues
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      _type: 1
-      _stateIndex: 27
-      _parent: 26
-      _lastUpdate: 0
-      _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Check State - VisitBank
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: MinerState == State.VisitBank
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 28
-      _parent: 9
-      _lastUpdate: 635915163086583515
-      _children: 1d0000001f000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Wealthy?
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: wealth >= comfortLevel
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 29
-      _parent: 28
-      _lastUpdate: 635915163086583515
-      _children: 1e000000
+      _stateIndex: 3
+      _parent: 35
+      _lastUpdate: 635916561654064855
+      _children: 25000000
       _variables: 
       _focused: 0
     - _fields:
@@ -964,15 +164,55 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 1
-      _stateIndex: 30
-      _parent: 29
+      _stateIndex: 4
+      _parent: 10
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
       _lastUpdate: 0
       _children: 
       _variables: 
       _focused: 0
     - _fields:
       - _field: name
-        _currentValue: Not Wealthy
+        _currentValue: Wealthy?
         _recordChange: 1
         _changed: 0
       - _field: open
@@ -1004,14 +244,698 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: constraint
-        _currentValue: wealth < comfortLevel
+        _currentValue: Wealth >= ComfortLevel
         _recordChange: 1
         _changed: 0
       _type: 5
-      _stateIndex: 31
-      _parent: 28
-      _lastUpdate: 635915163086583515
-      _children: 20000000
+      _stateIndex: 10
+      _parent: 35
+      _lastUpdate: 635916561654064855
+      _children: 04000000
+      _variables: 
+      _focused: 1
+    - _fields:
+      - _field: name
+        _currentValue: parallel
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: fail
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: succeed
+        _currentValue: all
+        _recordChange: 1
+        _changed: 0
+      - _field: tiebreaker
+        _currentValue: fail
+        _recordChange: 1
+        _changed: 0
+      _type: 15
+      _stateIndex: 11
+      _parent: 12
+      _lastUpdate: 635916562819911538
+      _children: 24000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Check State - VisitBank
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: MinerState == 1
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 12
+      _parent: 19
+      _lastUpdate: 635916561654064855
+      _children: 0b000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: ChangeState - QuenchThirst
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: namespace
+        _currentValue: (global)
+        _recordChange: 1
+        _changed: 0
+      - _field: classname
+        _currentValue: ChangeStateQuenchThirst
+        _recordChange: 1
+        _changed: 0
+      - _field: parameters
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: parametervalues
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 1
+      _stateIndex: 13
+      _parent: 14
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Thirsty?
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: Thirst >= ThirstThreshold
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 14
+      _parent: 17
+      _lastUpdate: 635916561654064855
+      _children: 0d000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: ChangeState - VisitBank
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: namespace
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: classname
+        _currentValue: ChangeStateVisitBank
+        _recordChange: 1
+        _changed: 0
+      - _field: parameters
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: parametervalues
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 1
+      _stateIndex: 15
+      _parent: 16
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Holding Enough Gold?
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: Gold >= GoldThreshold
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 16
+      _parent: 17
+      _lastUpdate: 635916561654064855
+      _children: 0f000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: parallel
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: fail
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: succeed
+        _currentValue: all
+        _recordChange: 1
+        _changed: 0
+      - _field: tiebreaker
+        _currentValue: fail
+        _recordChange: 1
+        _changed: 0
+      _type: 15
+      _stateIndex: 17
+      _parent: 18
+      _lastUpdate: 635916561654064855
+      _children: 100000000e000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Check State - EnterMineAndDig
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: MinerState == 0
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 18
+      _parent: 19
+      _lastUpdate: 635916561654064855
+      _children: 11000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: parallel
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: fail
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: succeed
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: tiebreaker
+        _currentValue: fail
+        _recordChange: 1
+        _changed: 0
+      _type: 15
+      _stateIndex: 19
+      _parent: 20
+      _lastUpdate: 635916561654064855
+      _children: 120000000c000000260000002a000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Miner
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 4
+      _stateIndex: 20
+      _parent: 0
+      _lastUpdate: 635916562819911538
+      _children: 13000000
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: parallel
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: fail
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: succeed
+        _currentValue: all
+        _recordChange: 1
+        _changed: 0
+      - _field: tiebreaker
+        _currentValue: fail
+        _recordChange: 1
+        _changed: 0
+      _type: 15
+      _stateIndex: 35
+      _parent: 36
+      _lastUpdate: 635916562819911538
+      _children: 0a00000003000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: All Gold Deposited
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: Gold <= 0
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 36
+      _parent: 11
+      _lastUpdate: 635916562771238754
+      _children: 23000000
       _variables: 
       _focused: 0
     - _fields:
@@ -1060,98 +984,10 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 1
-      _stateIndex: 32
-      _parent: 31
+      _stateIndex: 37
+      _parent: 3
       _lastUpdate: 0
       _children: 
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: Check State - QuenchThirst
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: MinerState == State.QuenchThirst
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 33
-      _parent: 9
-      _lastUpdate: 635915163086583515
-      _children: 22000000
-      _variables: 
-      _focused: 0
-    - _fields:
-      - _field: name
-        _currentValue: No Longer Thirsty
-        _recordChange: 1
-        _changed: 0
-      - _field: open
-        _currentValue: True
-        _recordChange: 0
-        _changed: 0
-      - _field: repeatuntil
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: debugbreak
-        _currentValue: False
-        _recordChange: 1
-        _changed: 0
-      - _field: startingpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: runningpriority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: priority
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: weight
-        _currentValue: 
-        _recordChange: 1
-        _changed: 0
-      - _field: constraint
-        _currentValue: Thirst <= 0
-        _recordChange: 1
-        _changed: 0
-      _type: 5
-      _stateIndex: 34
-      _parent: 33
-      _lastUpdate: 635915165489510955
-      _children: 16000000
       _variables: 
       _focused: 0
     - _fields:
@@ -1188,14 +1024,66 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: constraint
-        _currentValue: 
+        _currentValue: MinerState == 2
         _recordChange: 1
         _changed: 0
       _type: 5
-      _stateIndex: 35
-      _parent: 9
-      _lastUpdate: 635915163086583515
-      _children: 24000000
+      _stateIndex: 38
+      _parent: 19
+      _lastUpdate: 635916561654064855
+      _children: 27000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: parallel
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: fail
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: succeed
+        _currentValue: all
+        _recordChange: 1
+        _changed: 0
+      - _field: tiebreaker
+        _currentValue: fail
+        _recordChange: 1
+        _changed: 0
+      _type: 15
+      _stateIndex: 39
+      _parent: 38
+      _lastUpdate: 635916561654064855
+      _children: 28000000
       _variables: 
       _focused: 0
     - _fields:
@@ -1236,10 +1124,254 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       _type: 5
-      _stateIndex: 36
-      _parent: 35
-      _lastUpdate: 635915165603987503
-      _children: 15000000
+      _stateIndex: 40
+      _parent: 39
+      _lastUpdate: 635916561654064855
+      _children: 29000000
       _variables: 
       _focused: 0
-    _freeList: 03000000040000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
+    - _fields:
+      - _field: name
+        _currentValue: ChangeState - EnterMineAndDig
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: namespace
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: classname
+        _currentValue: ChangeStateEnterMineAndDig
+        _recordChange: 1
+        _changed: 0
+      - _field: parameters
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: parametervalues
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 1
+      _stateIndex: 41
+      _parent: 40
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: Check State - QuenchThirst
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: MinerState == 3
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 42
+      _parent: 19
+      _lastUpdate: 635916561654064855
+      _children: 2b000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: parallel
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: fail
+        _currentValue: any
+        _recordChange: 1
+        _changed: 0
+      - _field: succeed
+        _currentValue: all
+        _recordChange: 1
+        _changed: 0
+      - _field: tiebreaker
+        _currentValue: fail
+        _recordChange: 1
+        _changed: 0
+      _type: 15
+      _stateIndex: 43
+      _parent: 42
+      _lastUpdate: 635916561654064855
+      _children: 2c000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: No Longer Thirsty
+        _recordChange: 1
+        _changed: 0
+      - _field: open
+        _currentValue: True
+        _recordChange: 0
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: constraint
+        _currentValue: Thirst <= 0
+        _recordChange: 1
+        _changed: 0
+      _type: 5
+      _stateIndex: 44
+      _parent: 43
+      _lastUpdate: 635916561654064855
+      _children: 2d000000
+      _variables: 
+      _focused: 0
+    - _fields:
+      - _field: name
+        _currentValue: ChangeState - EnterMineAndDig
+        _recordChange: 1
+        _changed: 0
+      - _field: repeatuntil
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: debugbreak
+        _currentValue: False
+        _recordChange: 1
+        _changed: 0
+      - _field: startingpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: runningpriority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: priority
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: weight
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: namespace
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: classname
+        _currentValue: ChangeStateEnterMineAndDig
+        _recordChange: 1
+        _changed: 0
+      - _field: parameters
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      - _field: parametervalues
+        _currentValue: 
+        _recordChange: 1
+        _changed: 0
+      _type: 1
+      _stateIndex: 45
+      _parent: 44
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    _freeList: 0100000002000000050000000600000007000000080000000900000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000
